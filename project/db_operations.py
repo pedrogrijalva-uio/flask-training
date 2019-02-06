@@ -5,8 +5,10 @@ class DbOperations:
     @classmethod
     def create(cls, **kwargs):
         obj = cls(**kwargs)
+        print(type(obj))
         db.session.add(obj)
         db.session.commit()
+        return obj
 
     @classmethod
     def findByParameter(cls, **kwargs):
