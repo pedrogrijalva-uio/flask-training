@@ -17,12 +17,9 @@ except OSError:
 
 from .models import User
 
-@app.route('/hello')
-def hello():
-    User.create(name='nombre',email='nombre@test.com',passwd='test2')
-    return 'Hello, World!'
+from .profile import profile as profile_blueprint
+from .registration import registration as registration_blueprint
 
+app.register_blueprint(profile_blueprint, url_prefix='/profile')
+app.register_blueprint(registration_blueprint)
 
-@app.route('/')
-def home():
-    return 'PGrijalva Training!'
