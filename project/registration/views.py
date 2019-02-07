@@ -9,8 +9,11 @@ from ..models import Employee, User, Department
 def registration_page():
     form = RegistrationForm()
     update = False
+    del form.update
+    title = 'Profile registration'
     if form.validate_on_submit():
         if not update:
+            title = 'Profile registration'
             user = User.create(name=form.name.data,
                                email=form.email.data,
                                passwd=form.passwd.data,
@@ -18,19 +21,29 @@ def registration_page():
             employee = Employee.create(user_id=user.id,
                                        charge=form.charge.data,
                                        department_id=1)
+
         else:
+            title = 'Profile update'
             pass
     else:
-        user = User.query.filter(User.id == current_user._get_current_object().id).first()
-        employee = Employee.query.filter(Employee.user_id == user.id).first()
-        department = Department.query.filter(Department.id == employee.department_id).first()
+        try:
+            title = 'Profile update'
+            user = User.query.filter(User.id == current_user._get_current_object().id).first()
+            employee = Employee.query.filter(Employee.user_id == user.id).first()
+            department = Department.query.filter(Department.id == employee.department_id).first()
 
-        form.name.data = user.name
-        form.email.data = user.email
-        form.identification_number.data = user.identification_number
-        form.passwd.data = user.passwd
-        form.confirm.data = user.passwd
-        form.charge.data = employee.charge
-        form.department.data = department.id
+            form.name.data = user.name
+            form.email.data = user.email
+            form.identification_number.data = user.identification_number
+            form.passwd.data = user.passwd
+            form.confirm.data = user.passwd
+            form.charge.data = employee.charge
+            form.department.data = department.id
+            del form.passwd
+            del form.confirm
+            del form.submit
+        except Exception as exc:
+            print(exc)
 
-    return render_template('registration/form.html', form=form, title='Registration form')
+
+    return render_template('registration/form.html', form=form, title=title)
