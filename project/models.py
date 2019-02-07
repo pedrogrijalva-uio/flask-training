@@ -1,5 +1,9 @@
+from werkzeug.security import generate_password_hash, check_password_hash
+
 from project import db
-from .db_operations import DbOperations
+from .CRUDMixin import CRUDMixin
+from flask_login import UserMixin
+
 
 
 class Base(db.Model):
@@ -11,50 +15,97 @@ class Base(db.Model):
                               onupdate=db.func.current_timestamp())
 
 
-class User(DbOperations, Base):
-    __tableName__ = 'user'
+class User(UserMixin, CRUDMixin, Base):
+    __tableName__ = 'users'
     name = db.Column(db.String())
     email = db.Column(db.String(), unique=True)
     passwd = db.Column(db.String())
-    employee = db.relationship('Employee', uselist=False, back_populates='User')
+    authenticated = db.Column(db.Boolean, default=False)
+    identification_number = db.Column(db.String(), unique=True)
+    employee = db.relationship('Employee', uselist=False, back_populates='user')
+    contractor = db.relationship('Contractor', uselist=False, back_populates='user')
 
-    def __init__(self, name, email, passwd):
+    @property
+    def password(self):
+        raise AttributeError('password is not a readable attribute.')
+
+    @password.setter
+    def set_password(self, password):
+        self.passwd_hash = generate_password_hash(password)
+
+    def check_password(self, password):
+        return check_password_hash(self.passwd_hash, password)
+
+    def is_authenticated(self):
+        return True
+
+    def is_active(self):
+        return True
+
+    def is_anonymous(self):
+        return False
+
+    def get_id(self):
+        return str(self.email)
+
+    def __init__(self, name, email, passwd, identification_number):
         self.name = name
         self.email = email
         self.passwd = passwd
+        self.identification_number = identification_number
 
     def __repr__(self):
         return '<id {}>'.format(self.id)
 
 
-class Employee(DbOperations,Base):
-    __tableName__ = 'employee'
-    # department_id = db.Column(db.Integer, db.ForeignKey('department.id'))
-    account_number = db.Column(db.String(), unique=True)
+class Employee(CRUDMixin, Base):
+    __tableName__ = 'employees'
+
     charge = db.Column(db.String())
-    # department = db.relationship('department', back_populates='employee')
+    department = db.Column(db.String())
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
-    user = db.relationship('User', back_populates='Employee')
+    user = db.relationship('User', back_populates='employee')
+    department_id = db.Column(db.Integer, db.ForeignKey('department.id'))
+    department = db.relationship('Department', back_populates='employee')
 
-    def __init__(self, user_id, department, account_number, charge):
+    def __init__(self, user_id, charge, department_id):
         self.user_id = user_id
-        self.department = department
-        self.account_number = account_number
         self.charge = charge
+        self.department_id = department_id
 
     def __repr__(self):
         return '<id {}>'.format(self.id)
 
 
-class Department(Base):
-    __tableName = 'department'
+class Contractor(CRUDMixin, Base):
+    __tableName__ = 'contractors'
+
+    title = db.Column(db.String())
+    project = db.Column(db.String())
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    user = db.relationship('User', back_populates='contractor')
+    department_id = db.Column(db.Integer, db.ForeignKey('department.id'))
+    department = db.relationship('Department', back_populates='contractor')
+
+    def __init__(self, user_id, title, project, department_id):
+        self.user_id = user_id
+        self.title = title
+        self.project = project
+        self.department_id = department_id
+
+    def __repr__(self):
+        return '<id {}>'.format(self.id)
+
+
+class Department(CRUDMixin, Base):
+    __tableName__ = 'departments'
+
     name = db.Column(db.String())
-    description = db.Column(db.String())
+    employee = db.relationship('Employee', uselist=False, back_populates='department')
+    contractor = db.relationship('Contractor', uselist=False, back_populates='department')
 
-    # employees = db.relationship('employee', backref=' role', lazy='dynamic')
-
-    def __init__(self, name, description, employees):
-        pass
+    def __init__(self, name):
+        self.name = name
 
     def __repr__(self):
         return '<id {}>'.format(self.id)
