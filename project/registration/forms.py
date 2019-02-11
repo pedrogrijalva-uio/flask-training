@@ -16,31 +16,7 @@ class RegistrationForm(FlaskForm):
     department = SelectField('Department', choices=departments)
     charge = StringField('Charge', validators=[DataRequired()])
     submit = SubmitField('Register')
-    update = SubmitField('Update')
 
-
-class ProfileUpdate(FlaskForm):
-    departments = [('1', 'Development'),
-                   ('2', 'DevOps'),
-                   ('3', 'QA')]
-    name = StringField('Name', validators=[DataRequired()])
-    email = StringField('Email', validators=[DataRequired(), Email()])
-    identification_number = StringField('SSN / CI', validators=[DataRequired()])
-    department = SelectField('Department', choices=departments)
-    charge = StringField('Charge', validators=[DataRequired()])
-    submit = SubmitField('Update')
-
-
-class PasswordUpdate(FlaskForm):
-    departments = [('1', 'Development'),
-                   ('2', 'DevOps'),
-                   ('3', 'QA')]
-    name = StringField('Name', validators=[DataRequired()])
-    email = StringField('Email', validators=[DataRequired(), Email()])
-    identification_number = StringField('SSN / CI', validators=[DataRequired()])
-    department = SelectField('Department', choices=departments)
-    charge = StringField('Charge', validators=[DataRequired()])
-    submit = SubmitField('Update')
 
 
 

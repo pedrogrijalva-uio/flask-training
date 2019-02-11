@@ -1,9 +1,8 @@
+from flask_login import UserMixin
 from werkzeug.security import generate_password_hash, check_password_hash
 
 from project import db
 from .CRUDMixin import CRUDMixin
-from flask_login import UserMixin
-
 
 
 class Base(db.Model):
@@ -23,7 +22,6 @@ class User(UserMixin, CRUDMixin, Base):
     authenticated = db.Column(db.Boolean, default=False)
     identification_number = db.Column(db.String(), unique=True)
     employee = db.relationship('Employee', uselist=False, back_populates='user')
-    contractor = db.relationship('Contractor', uselist=False, back_populates='user')
 
     @property
     def password(self):
@@ -77,32 +75,11 @@ class Employee(CRUDMixin, Base):
         return '<id {}>'.format(self.id)
 
 
-class Contractor(CRUDMixin, Base):
-    __tableName__ = 'contractors'
-
-    title = db.Column(db.String())
-    project = db.Column(db.String())
-    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
-    user = db.relationship('User', back_populates='contractor')
-    department_id = db.Column(db.Integer, db.ForeignKey('department.id'))
-    department = db.relationship('Department', back_populates='contractor')
-
-    def __init__(self, user_id, title, project, department_id):
-        self.user_id = user_id
-        self.title = title
-        self.project = project
-        self.department_id = department_id
-
-    def __repr__(self):
-        return '<id {}>'.format(self.id)
-
-
 class Department(CRUDMixin, Base):
     __tableName__ = 'departments'
 
     name = db.Column(db.String())
     employee = db.relationship('Employee', uselist=False, back_populates='department')
-    contractor = db.relationship('Contractor', uselist=False, back_populates='department')
 
     def __init__(self, name):
         self.name = name

@@ -23,17 +23,19 @@ from .models import User
 login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_message = "You must be logged in to access this page."
-login_manager.login_view = "auth.login"
+login_manager.login_view = "auth.loginuser"
+login_manager.session_protection = "strong"
+login_manager.refresh_view = "auth.loginuser"
 
 
 @login_manager.user_loader
-def load_user(email):
-    return User.query.filter_by(email= email).first()
+def load_user(id):
+    return User.query.get(int(id))
 
 
 from .profile import profile as profile_blueprint
 from .registration import registration as registration_blueprint
-from .login import login as login_blueprint
+from .auth import login as login_blueprint
 
 app.register_blueprint(profile_blueprint, url_prefix='/profile')
 app.register_blueprint(registration_blueprint)

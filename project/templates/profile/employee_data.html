@@ -4,10 +4,10 @@
 {% block body %}
     <h1>Employee profile</h1>
     <div class="row">
-        <div class="col-sm-1">
+        <div class="col-sm-2">
             Name
         </div>
-        <div class="col-sm-1">
+        <div class="col-sm-2">
             {{ user.name }}
         </div>
     </div>
@@ -43,5 +43,5 @@
             {{ employee.charge }}
         </div>
     </div>
-    <button type="button" onclick="window.location.href='{{ url_for( 'registration.registration_page' ) }}';">Update</button>
+    <button type="button" onclick="window.location.href='{{ url_for( 'profile.update_user_data' ) }}';">Update</button>
 {% endblock %}
