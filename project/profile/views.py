@@ -1,8 +1,9 @@
 from flask import render_template, redirect, url_for, request, flash
 from flask_login import login_required, current_user
 
-from project.exceptions.custom_exceptions import NameTooShort, NameContainsSpecialCharacters
-from project.validators.validators import validate_name, validate_email, validate_identification_number
+from project.exceptions.custom_exceptions import ValueTooShort, ValueContainsSpecialCharacters
+from project.validators.validators import validate_name, validate_identification_number, \
+    validate_value_changed
 from . import profile
 from .forms import EmployeeProfileForm
 from ..models import User, Employee, Department
@@ -28,26 +29,24 @@ def update_user_data():
         if form.validate_on_submit():
             try:
                 user.name = validate_name(form.name.data, user.name, type='name')
-                user.email = validate_email(form.email.data, user.email, type='email')
+                user.email = validate_value_changed(form.email.data, user.email, type='email')
                 user.identification_number = validate_identification_number(form.identification_number.data,
-                                                               user.identification_number, type='identification')
-                employee.charge = ''
-                employee.department_id = ''
-
-                # employee.charge = values_comparison(form.charge.data, employee.charge)
-                # employee.department_id = values_comparison(form.department.data, employee.department_id)
-                return redirect(url_for(request.args.get('next', 'profile.user_data')))
-            except NameTooShort as exsh:
-                flash('User Name too short. Please type at least 5 characters')
-            except NameContainsSpecialCharacters as exch:
-                flash('User Name can\'t contain special characters')
+                                                                            user.identification_number,
+                                                                            type='identification')
+                employee.charge = validate_name(form.charge.data, employee.charge, type='charge')
+                employee.department_id = validate_value_changed(form.department.data, employee.department_id,
+                                                                type='department')
+            except ValueTooShort as exsh:
+                flash(str(exsh))
+            except ValueContainsSpecialCharacters as exch:
+                flash(str(exch))
             else:
-                pass
-                # user.update(name=user.name, email=user.email, passwd=user.passwd,
-                #             identification_number=user.identification_number)
-                # employee.update(user_id=user.id, charge=employee.charge, department_id=employee.department_id)
+                user.update(name=user.name, email=user.email, passwd=user.passwd,
+                            identification_number=user.identification_number)
+                employee.update(user_id=user.id, charge=employee.charge, department_id=employee.department_id)
+                return redirect(url_for(request.args.get('next', 'profile.user_data')))
             finally:
-                render_template('profile/update_employee_data.html', form=form, title=title)
+                return render_template('profile/update_employee_data.html', form=form, title=title)
         else:
             form.name.data = user.name
             form.identification_number.data = user.identification_number

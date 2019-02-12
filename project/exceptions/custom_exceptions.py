@@ -1,12 +1,12 @@
-class NameException(Exception):
+class ValueException(Exception):
     pass
 
 
-class NameTooShort(NameException):
+class ValueTooShort(ValueException):
     pass
 
 
-class NameContainsSpecialCharacters(NameException):
+class ValueContainsSpecialCharacters(ValueException):
     pass
 
 
@@ -18,5 +18,4 @@ class IdentificationNumberIncomplete(IdentificationNumberException):
     pass
 
 
-class IdentificationNumberContainsSpecialCharacters(IdentificationNumberException):
-    pass
+

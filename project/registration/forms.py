@@ -2,11 +2,15 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, PasswordField, SelectField, validators
 from wtforms.validators import DataRequired, Email
 
+from project.enum.department_enum import DepartmentEnum
+
 
 class RegistrationForm(FlaskForm):
-    departments = [('1', 'Development'),
-                   ('2', 'DevOps'),
-                   ('3', 'QA')]
+    departments = []
+    for d in DepartmentEnum:
+        element = (d.value, d.name)
+        departments.append(element)
+
     name = StringField('Name', validators=[DataRequired()])
     email = StringField('Email', validators=[DataRequired(), Email()])
     passwd = PasswordField('Password', validators=[DataRequired(),
@@ -16,7 +20,3 @@ class RegistrationForm(FlaskForm):
     department = SelectField('Department', choices=departments)
     charge = StringField('Charge', validators=[DataRequired()])
     submit = SubmitField('Register')
-
-
-
-

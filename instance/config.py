@@ -9,6 +9,7 @@ class Config():
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     DEBUG = False
     TESTING = False
+    WTF_CSRF_METHODS = ['POST', 'PUT', 'PATCH']
 
 
 class DevelopmentConfig(Config):
