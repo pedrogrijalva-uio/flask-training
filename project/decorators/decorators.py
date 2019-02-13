@@ -6,6 +6,7 @@ from project.exceptions.custom_exceptions import ValueTooShort, ValueContainsSpe
 def values_comparison(func):
     def wrapper(*args, **kwargs):
         name = args[1] if args[0] == args[1] else args[0]
+        print(type(func))
         return func(name, **kwargs)
 
     return wrapper
@@ -38,7 +39,7 @@ def validate_value_characters(func):
             pattern = '0-9' if kwargs['type'] == 'name' else ''
         base_pattern = r'^\w[^' + pattern + '!@#$%^&*()_+=:;\'\"\\|~`/?><,.-]+$'
         match = re.search(base_pattern, args[0])
-        if match is None:
+        if not match:
             raise ValueContainsSpecialCharacters(
                 f'{value_type} must not have {unaccepted_types} special characters. It only accepts {accepted_type}.')
         else:

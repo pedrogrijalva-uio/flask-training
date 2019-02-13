@@ -1,12 +1,17 @@
+import typing
+from typing import List
+
 from flask import render_template, redirect, url_for, request, flash
 from flask_login import login_required, current_user
 
 from project.exceptions.custom_exceptions import ValueTooShort, ValueContainsSpecialCharacters
+from project.models import Employee
 from project.validators.validators import validate_name, validate_identification_number, \
     validate_value_changed
 from . import profile
 from .forms import EmployeeProfileForm
 from ..models import User, Employee, Department
+from ..services import employee_services
 
 
 @profile.route('/user-data', methods=['GET', 'POST'])
@@ -22,6 +27,13 @@ def user_data():
 @login_required
 def update_user_data():
     try:
+        print('<<<<<<<<<<<<<<<<<<<')
+        print('update_user_data')
+        cadena: int = employee_services.test_type()
+        test: Employee = employee_services.get_employee_by_user_id()
+        lista: List[Employee] = employee_services.lists_employees()
+        print(type(cadena))
+        print('<<<<<<<<<<<<<<<<<<<')
         form = EmployeeProfileForm()
         title = 'Update profile'
         user: User = current_user
@@ -34,6 +46,8 @@ def update_user_data():
                                                                             user.identification_number,
                                                                             type='identification')
                 employee.charge = validate_name(form.charge.data, employee.charge, type='charge')
+                print(form.department.data)
+                employee.department_id = 1
                 employee.department_id = validate_value_changed(form.department.data, employee.department_id,
                                                                 type='department')
             except ValueTooShort as exsh:

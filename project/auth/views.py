@@ -4,7 +4,8 @@ from flask_login import login_user, logout_user, login_required, current_user
 from project import db
 from . import login
 from .forms import LoginForm
-from ..models import User
+
+from ..services import user_services
 
 
 @login.route('/login', methods=['GET', 'POST'])
@@ -12,7 +13,7 @@ def loginuser():
     form = LoginForm()
     if form.validate_on_submit():
         try:
-            user = User.query.filter(User.email == form.email.data, User.passwd == form.passwd.data).one()
+            user = user_services.get_user_by_email_and_password(form.email.data, form.passwd.data)
             login_user(user)
             session['user_id'] = user.id
             return redirect(url_for(request.args.get('next', 'profile.user_data')))

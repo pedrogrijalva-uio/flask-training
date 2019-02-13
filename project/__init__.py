@@ -27,8 +27,8 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_message = "You must be logged in to access this page."
 login_manager.login_view = "auth.loginuser"
-# login_manager.session_protection = "strong"
-# login_manager.refresh_view = "auth.loginuser"
+login_manager.session_protection = "strong"
+login_manager.refresh_view = "auth.loginuser"
 
 
 @login_manager.user_loader

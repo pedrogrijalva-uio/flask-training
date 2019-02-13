@@ -16,3 +16,4 @@ class EmployeeProfileForm(FlaskForm):
     department = SelectField('Department', choices=departments)
     charge = StringField('Charge', validators=[DataRequired()])
     submit = SubmitField('Update')
+
