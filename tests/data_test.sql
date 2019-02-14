@@ -1,0 +1,1 @@
+INSERT INTO user (date_created, date_modified, name, email, passwd, authenticated, identification_number) VALUES ('1550004463451', '1550004467139', 'User Name', 'test2@test.com', 'aaa', 1, '1234567892');
