@@ -15,7 +15,9 @@ _mailinglist
 .pytest_cache/
 .idea/
 docs/_build/
-
+venv-pgrijalva-training/*
+.idea/
+*.pyc
 # Coverage reports
 htmlcov/
 .coverage
