@@ -23,6 +23,8 @@ script: true
 
  # Another command/method to run tests
 script:
+  - flake8
+  - lint
   - python -m pytest
 
 # This returns the coverage and let's coveralls know the coverage percent.
