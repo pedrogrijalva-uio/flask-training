@@ -18,6 +18,7 @@ docs/_build/
 venv-pgrijalva-training/*
 .idea/
 *.pyc
+
 # Coverage reports
 htmlcov/
 .coverage
