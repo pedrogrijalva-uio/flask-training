@@ -1,11 +1,10 @@
 from flask import render_template, flash, url_for, redirect, request, session
-from flask_login import login_user, logout_user, login_required, current_user
+from flask_login import logout_user, login_required, current_user, login_user
 
 from project import db
 from . import login
 from .forms import LoginForm
-
-from ..services import user_services
+from project.services.db import user_services
 
 
 @login.route('/login', methods=['GET', 'POST'])
@@ -16,6 +15,7 @@ def loginuser():
             user = user_services.get_user_by_email_and_password(form.email.data, form.passwd.data)
             login_user(user)
             session['user_id'] = user.id
+            current_user = user
             return redirect(url_for(request.args.get('next', 'profile.user_data')))
         except Exception as ex:
             print(ex)

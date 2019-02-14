@@ -2,54 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fec7c779-9ec9-4ba1-88e3-6d17bc3cd260" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.mypy_cache/3.6/project/db.data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mypy_cache/3.6/project/db.meta.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mypy_cache/3.6/project/decorators/__init__.data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mypy_cache/3.6/project/decorators/__init__.meta.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mypy_cache/3.6/project/decorators/decorators.data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mypy_cache/3.6/project/decorators/decorators.meta.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mypy_cache/3.6/project/enum/__init__.data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mypy_cache/3.6/project/enum/__init__.meta.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mypy_cache/3.6/project/enum/department_enum.data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mypy_cache/3.6/project/enum/department_enum.meta.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mypy_cache/3.6/project/exceptions/__init__.data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mypy_cache/3.6/project/exceptions/__init__.meta.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mypy_cache/3.6/project/exceptions/custom_exceptions.data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mypy_cache/3.6/project/exceptions/custom_exceptions.meta.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mypy_cache/3.6/project/services/__init__.data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mypy_cache/3.6/project/services/__init__.meta.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mypy_cache/3.6/project/validators/__init__.data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mypy_cache/3.6/project/validators/__init__.meta.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mypy_cache/3.6/project/validators/validators.data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mypy_cache/3.6/project/validators/validators.meta.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mypy_cache/3.6/re.data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mypy_cache/3.6/re.meta.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/services/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/services/employee_services.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/services/user_services.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv-pgrijalva-training/lib/python3.6/site-packages/typed_ast-1.3.1.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv-pgrijalva-training/lib/python3.6/site-packages/typed_ast/_ast3.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/services/db/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/services/rest/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/services/rest/json_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/services/rest/rest_services.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/auth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/auth/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/decorators/decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/decorators/decorators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/enum/department_enum.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/enum/department_enum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/profile/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/profile/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/profile/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/profile/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/validators/validators.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/validators/validators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/registration/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/registration/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/services/employee_services.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/services/db/employee_services.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/services/user_services.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/services/db/user_services.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv-pgrijalva-training/lib/python3.6/site-packages/_ast27.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv-pgrijalva-training/lib/python3.6/site-packages/typed_ast/_ast27.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv-pgrijalva-training/lib/python3.6/site-packages/_ast3.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv-pgrijalva-training/lib/python3.6/site-packages/typed_ast-1.2.0.dist-info/INSTALLER" beforeDir="false" afterPath="$PROJECT_DIR$/venv-pgrijalva-training/lib/python3.6/site-packages/typed_ast-1.3.1.dist-info/INSTALLER" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv-pgrijalva-training/lib/python3.6/site-packages/typed_ast-1.2.0.dist-info/METADATA" beforeDir="false" afterPath="$PROJECT_DIR$/venv-pgrijalva-training/lib/python3.6/site-packages/typed_ast-1.3.1.dist-info/METADATA" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv-pgrijalva-training/lib/python3.6/site-packages/typed_ast-1.2.0.dist-info/RECORD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv-pgrijalva-training/lib/python3.6/site-packages/typed_ast-1.2.0.dist-info/WHEEL" beforeDir="false" afterPath="$PROJECT_DIR$/venv-pgrijalva-training/lib/python3.6/site-packages/typed_ast-1.3.1.dist-info/WHEEL" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv-pgrijalva-training/lib/python3.6/site-packages/typed_ast-1.2.0.dist-info/top_level.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv-pgrijalva-training/lib/python3.6/site-packages/typed_ast-1.3.1.dist-info/top_level.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv-pgrijalva-training/lib/python3.6/site-packages/typed_ast/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv-pgrijalva-training/lib/python3.6/site-packages/typed_ast/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv-pgrijalva-training/lib/python3.6/site-packages/typed_ast/ast27.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv-pgrijalva-training/lib/python3.6/site-packages/typed_ast/ast27.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv-pgrijalva-training/lib/python3.6/site-packages/typed_ast/ast3.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv-pgrijalva-training/lib/python3.6/site-packages/typed_ast/ast3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv-pgrijalva-training/lib/python3.6/site-packages/typed_ast/conversions.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv-pgrijalva-training/lib/python3.6/site-packages/typed_ast/conversions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_flask.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_flask.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +23,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/training_pgrijalva$test_flask.coverage" NAME="test_flask Coverage Results" MODIFIED="1550006257485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/training_pgrijalva$test_flask.coverage" NAME="test_flask Coverage Results" MODIFIED="1550160519891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/training_pgrijalva$pytest_in_test_flask_py.coverage" NAME="pytest in test_flask.py Coverage Results" MODIFIED="1550160546891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/training_pgrijalva$Flask__project___init___py_.coverage" NAME="Flask (project/__init__.py) Coverage Results" MODIFIED="1550006235299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
@@ -137,56 +103,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/auth/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-              <folding>
-                <element signature="e#0#77#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/project/services/user_services.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/test_flask.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-663">
+              <caret line="1" column="29" lean-forward="true" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/validators/validators.py">
+        <entry file="file://$PROJECT_DIR$/venv-pgrijalva-training/lib/python3.6/site-packages/_pytest/python.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/exceptions/custom_exceptions.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="19" />
+            <state relative-caret-position="-58">
+              <caret line="165" selection-start-line="165" selection-end-line="165" />
             </state>
           </provider>
         </entry>
@@ -194,43 +124,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project/decorators/decorators.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-145">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="114">
+              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/profile/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="53" column="21" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#6#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/enum/department_enum.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/services/employee_services.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -256,6 +153,8 @@
       <find>employee.</find>
       <find>profile.update_user_data</find>
       <find>validate</find>
+      <find>auth.loginuser</find>
+      <find>auth.login</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -280,7 +179,6 @@
         <option value="$PROJECT_DIR$/project/db_operations.py" />
         <option value="$PROJECT_DIR$/project/templates/login/form.html" />
         <option value="$PROJECT_DIR$/project/templates/profile/employee_data.html" />
-        <option value="$PROJECT_DIR$/project/templates/base.html" />
         <option value="$PROJECT_DIR$/project/login/views.py" />
         <option value="$PROJECT_DIR$/project/auth/__init__.py" />
         <option value="$PROJECT_DIR$/project/CRUDMixin.py" />
@@ -292,24 +190,29 @@
         <option value="$PROJECT_DIR$/project/templates/profile/update_employee_data.html" />
         <option value="$PROJECT_DIR$/project/exceptions/custom_exceptions.py" />
         <option value="$PROJECT_DIR$/project/templates/registration/form.html" />
-        <option value="$PROJECT_DIR$/project/registration/views.py" />
         <option value="$PROJECT_DIR$/project/enum/DepartmentEnum.py" />
         <option value="$PROJECT_DIR$/project/registration/forms.py" />
         <option value="$PROJECT_DIR$/instance/config.py" />
         <option value="$PROJECT_DIR$/project/templates/auth/form.html" />
         <option value="$PROJECT_DIR$/project/db.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/tests/test_data.sql" />
-        <option value="$PROJECT_DIR$/tests/test_flask.py" />
         <option value="$PROJECT_DIR$/project/__init__.py" />
         <option value="$PROJECT_DIR$/project/validators/validators.py" />
         <option value="$PROJECT_DIR$/project/profile/forms.py" />
         <option value="$PROJECT_DIR$/project/enum/department_enum.py" />
-        <option value="$PROJECT_DIR$/project/profile/views.py" />
-        <option value="$PROJECT_DIR$/project/services/employee_services.py" />
-        <option value="$PROJECT_DIR$/project/decorators/decorators.py" />
-        <option value="$PROJECT_DIR$/project/auth/views.py" />
         <option value="$PROJECT_DIR$/project/services/user_services.py" />
+        <option value="$PROJECT_DIR$/project/services/employee_services.py" />
+        <option value="$PROJECT_DIR$/project/registration/views.py" />
+        <option value="$PROJECT_DIR$/project/services/db/employee_services.py" />
+        <option value="$PROJECT_DIR$/project/templates/base.html" />
+        <option value="$PROJECT_DIR$/project/auth/views.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/project/services/rest/rest_base.py" />
+        <option value="$PROJECT_DIR$/project/services/rest/json_util.py" />
+        <option value="$PROJECT_DIR$/project/services/rest/rest_services.py" />
+        <option value="$PROJECT_DIR$/project/profile/views.py" />
+        <option value="$PROJECT_DIR$/project/decorators/decorators.py" />
+        <option value="$PROJECT_DIR$/tests/test_flask.py" />
       </list>
     </option>
   </component>
@@ -347,6 +250,12 @@
               <item name="training-pgrijalva" type="b2602c69:ProjectViewProjectNode" />
               <item name="training-pgrijalva" type="462c0819:PsiDirectoryNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="decorators" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="training-pgrijalva" type="b2602c69:ProjectViewProjectNode" />
+              <item name="training-pgrijalva" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
               <item name="enum" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -377,7 +286,15 @@
               <item name="training-pgrijalva" type="b2602c69:ProjectViewProjectNode" />
               <item name="training-pgrijalva" type="462c0819:PsiDirectoryNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="training-pgrijalva" type="b2602c69:ProjectViewProjectNode" />
+              <item name="training-pgrijalva" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="training-pgrijalva" type="b2602c69:ProjectViewProjectNode" />
@@ -391,6 +308,13 @@
               <item name="project" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="profile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="training-pgrijalva" type="b2602c69:ProjectViewProjectNode" />
+              <item name="training-pgrijalva" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="registration" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="training-pgrijalva" type="b2602c69:ProjectViewProjectNode" />
@@ -418,13 +342,14 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/test_flask.py" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/project/services/db" />
       <recent name="$PROJECT_DIR$/project/templates/login" />
       <recent name="$PROJECT_DIR$/project/templates/form" />
     </key>
@@ -441,14 +366,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Flask server.Flask (project/__init__.py)">
+  <component name="RunManager" selected="Python tests.pytest in test_flask.py">
     <configuration name="test_flask" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="training-pgrijalva" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -457,7 +379,7 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_flask.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -479,8 +401,30 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in test_flask.py" type="tests" factoryName="py.test" nameIsGenerated="true">
+      <module name="training-pgrijalva" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv-pgrijalva-training/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_flask.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Flask server.Flask (project/__init__.py)" />
+      <item itemvalue="Python.test_flask" />
+      <item itemvalue="Python tests.pytest in test_flask.py" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test_flask" />
         <item itemvalue="Python.test_flask" />
       </list>
     </recent_temporary>
@@ -498,12 +442,44 @@
       <workItem from="1549468308508" duration="8993000" />
       <workItem from="1549480963165" duration="47195000" />
       <workItem from="1549634671159" duration="7910000" />
-      <workItem from="1549642725750" duration="69698000" />
+      <workItem from="1549642725750" duration="93943000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="pytest_in_test_flask_py - 2019.02.14 at 10h 34m 07s.xml">
+      <configuration name="pytest in test_flask.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_flask_py - 2019.02.14 at 10h 34m 12s.xml">
+      <configuration name="pytest in test_flask.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_flask_py - 2019.02.14 at 10h 34m 48s.xml">
+      <configuration name="pytest in test_flask.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_flask_py - 2019.02.14 at 10h 35m 25s.xml">
+      <configuration name="pytest in test_flask.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_flask_py - 2019.02.14 at 10h 35m 45s.xml">
+      <configuration name="pytest in test_flask.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_flask_py - 2019.02.14 at 10h 40m 24s.xml">
+      <configuration name="pytest in test_flask.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_flask_py - 2019.02.14 at 10h 42m 45s.xml">
+      <configuration name="pytest in test_flask.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_flask_py - 2019.02.14 at 10h 42m 58s.xml">
+      <configuration name="pytest in test_flask.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_flask_py - 2019.02.14 at 11h 07m 42s.xml">
+      <configuration name="pytest in test_flask.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_flask_py - 2019.02.14 at 11h 09m 10s.xml">
+      <configuration name="pytest in test_flask.py" configurationId="tests" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133796000" />
+    <option name="totallyTimeSpent" value="158041000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -524,6 +500,31 @@
       <window_info anchor="bottom" id="SQL Generator" order="0" weight="0.32925472" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32925472" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.32925472" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.86607635" weight="0.39933258" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32925472" />
+      <window_info anchor="bottom" id="Database Console" order="8" weight="0.32972974" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32925472" />
+      <window_info anchor="bottom" id="Database Changes" order="11" weight="0.32925472" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.7880465" visible="true" weight="0.36707452" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.21195352" side_tool="true" weight="0.21357064" />
+      <window_info anchor="bottom" id="Python Console" order="14" weight="0.32925472" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32982844" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17321527" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="SQL Generator" order="0" weight="0.32925472" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32925472" />
       <window_info anchor="bottom" id="Run" order="3" />
       <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.86607635" weight="0.39933258" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
@@ -533,7 +534,7 @@
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32925472" />
       <window_info anchor="bottom" id="Database Changes" order="11" weight="0.32925472" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.7880465" visible="true" weight="0.21357064" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.7880465" visible="true" weight="0.60177976" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.21195352" side_tool="true" weight="0.21357064" />
       <window_info anchor="bottom" id="Python Console" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -541,7 +542,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" weight="0.32982844" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -555,63 +556,19 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/project/registration/views.py</url>
-          <line>13</line>
-          <option name="timeStamp" value="12" />
+          <url>file://$PROJECT_DIR$/tests/test_flask.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/project/decorators/decorators.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv-pgrijalva-training/lib/python3.6/site-packages/wtforms/fields/core.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="521" column="6" selection-start-line="521" selection-start-column="6" selection-end-line="521" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/profile/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/auth/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv-pgrijalva-training/lib/python3.6/site-packages/flask/cli.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="323" selection-start-line="323" selection-end-line="323" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv-pgrijalva-training/lib/python3.6/site-packages/werkzeug/serving.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="300" selection-start-line="300" selection-end-line="300" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python3.6/threading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="870" column="61" lean-forward="true" selection-start-line="870" selection-start-column="61" selection-end-line="870" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python3.6/socketserver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="654" selection-start-line="654" selection-end-line="654" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/python3.6/http/server.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -626,32 +583,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/validators/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/project/decorators/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/CRUDMixin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/templates/registration/form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/templates/profile/update_employee_data.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project/exceptions/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -667,24 +600,10 @@
         <state relative-caret-position="-442" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/templates/profile/employee_data.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="45" column="70" selection-start-line="45" selection-start-column="70" selection-end-line="45" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv-pgrijalva-training/lib/python3.6/site-packages/flask/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-743">
           <caret line="949" column="8" selection-start-line="949" selection-start-column="8" selection-end-line="949" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/templates/auth/form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -695,31 +614,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/auth/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project/db.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d071d690-55d2-4189-a0f4-76c02631d7ba/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="das://d071d690-55d2-4189-a0f4-76c02631d7ba/schema/main/table/department">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
@@ -770,32 +669,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project/registration/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="17" column="11" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="11" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/registration/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#77#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -807,54 +686,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/profile/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://3ab19130-65f7-4c1f-bc62-edae09185fd2/database/flaskdb/schema/public/table/user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://3ab19130-65f7-4c1f-bc62-edae09185fd2/database/flaskdb/schema/public/table/employee">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_flask.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/exceptions/custom_exceptions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/profile/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="53" column="21" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#6#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -872,12 +707,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/decorators/decorators.py">
+    <entry file="file://$PROJECT_DIR$/project/CRUDMixin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-145">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="197">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/services/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/validators/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/auth/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="636">
+          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="41" column="85" selection-start-line="41" selection-start-column="85" selection-end-line="41" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/templates/profile/update_employee_data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv-pgrijalva-training/lib/python3.6/site-packages/requests/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="863" column="54" selection-start-line="863" selection-start-column="54" selection-end-line="863" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/templates/auth/form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://3ab19130-65f7-4c1f-bc62-edae09185fd2/database/flaskdb/schema/public/table/user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/auth/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/auth/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/services/db/user_services.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/services/rest/rest_services.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/services/rest/json_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/profile/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -889,40 +836,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/services/employee_services.py">
+    <entry file="file://$PROJECT_DIR$/project/exceptions/custom_exceptions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        <state relative-caret-position="76">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/profile/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/validators/validators.py">
+    <entry file="file://$PROJECT_DIR$/project/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        <state relative-caret-position="891">
+          <caret line="48" column="23" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/auth/views.py">
+    <entry file="file://$PROJECT_DIR$/project/templates/profile/employee_data.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+        <state relative-caret-position="627">
+          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/services/db/employee_services.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/templates/registration/form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/validators/validators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/registration/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
           <folding>
             <element signature="e#0#77#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/services/user_services.py">
+    <entry file="file://$PROJECT_DIR$/venv-pgrijalva-training/lib/python3.6/site-packages/_pytest/python.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        <state relative-caret-position="-58">
+          <caret line="165" selection-start-line="165" selection-end-line="165" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/decorators/decorators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_flask.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-663">
+          <caret line="1" column="29" lean-forward="true" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
         </state>
       </provider>
     </entry>

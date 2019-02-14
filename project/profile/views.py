@@ -1,18 +1,15 @@
-import typing
 from typing import List
 
 from flask import render_template, redirect, url_for, request, flash
 from flask_login import login_required, current_user
 
 from project.exceptions.custom_exceptions import ValueTooShort, ValueContainsSpecialCharacters
-from project.models import Employee
 from project.validators.validators import validate_name, validate_identification_number, \
     validate_value_changed
 from . import profile
 from .forms import EmployeeProfileForm
 from ..models import User, Employee, Department
-from ..services import employee_services
-
+from ..services.rest import rest_services
 
 @profile.route('/user-data', methods=['GET', 'POST'])
 @login_required
@@ -27,16 +24,17 @@ def user_data():
 @login_required
 def update_user_data():
     try:
+        user: User = current_user
         print('<<<<<<<<<<<<<<<<<<<')
         print('update_user_data')
-        cadena: int = employee_services.test_type()
-        test: Employee = employee_services.get_employee_by_user_id()
-        lista: List[Employee] = employee_services.lists_employees()
-        print(type(cadena))
+        print(user.email)
+        github_username = rest_services.get_github_username(user.email)
+        print(github_username[0])
+        repos_github = rest_services.get_repos_by_user(github_username[1])
+        print(repos_github)
         print('<<<<<<<<<<<<<<<<<<<')
         form = EmployeeProfileForm()
         title = 'Update profile'
-        user: User = current_user
         employee: Employee = Employee.query.filter(Employee.user_id == user.id).first()
         if form.validate_on_submit():
             try:

@@ -1,10 +1,12 @@
 import os
 from unittest import TestCase
+from mock import patch, MagicMock, Mock
 
 import pytest
 
 from project import app
-from project.validators.validators import validate_value_registration
+from project.decorators.decorators import values_comparison
+from project.validators.validators import validate_value_registration, validate_name
 
 with open(os.path.join(os.path.dirname(__file__), 'data_test.sql'), 'rb') as f:
     _data_sql = f.read().decode('utf8')
@@ -24,7 +26,6 @@ def client():
 
 def test_empty_db(client):
     rv = client.get('/login')
-    print(rv.data)
     assert b'Login' in rv.data
 
 
@@ -39,17 +40,12 @@ def register_user(client, name, email, passwd, confirm, identification_number, d
 
 
 def test_login(client):
-    rv = login(client, 'd@d.com', 'aaa')
-    print(rv.data)
+    rv = login(client, 'pedrogrijalva@gmail.com', 'aaa')
     assert b'Hi Test!' in rv.data
 
 
 def test_register(client):
     rv = register_user(client, 'Test test', 'test13@test.com', 'abc', 'abc', '0987654321', '', 'test charge')
-    print(rv.data)
     assert b'Test test' in rv.data
 
-
-def test_compare_values(client):
-    validate_value_registration('tesst test','test testet',type='name')
 
