@@ -3,6 +3,7 @@ language: python
 
 # Mention the python version in which travis will run the app
 python:
+  - "3.5"
   - "3.6"
 
 
@@ -22,7 +23,9 @@ script: true
 
  # Another command/method to run tests
 script:
-  - pypytest
+  - flake8
+  - lint
+  - python -m pytest
 
 # This returns the coverage and let's coveralls know the coverage percent.
 # Note that travis will build your system and get the coverage.

@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fec7c779-9ec9-4ba1-88e3-6d17bc3cd260" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/decorators/decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/decorators/decorators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/profile/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/profile/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/profile/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/profile/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/services/rest/json_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/services/rest/json_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/services/rest/rest_services.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/services/rest/rest_services.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/templates/profile/employee_data.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/profile/employee_data.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <ignored path=".pytest_cache/" />
     <ignored path=".mypy_cache/" />
@@ -193,8 +188,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="401">
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
             </state>
           </provider>
         </entry>
@@ -449,7 +444,7 @@
       <workItem from="1549468308508" duration="8993000" />
       <workItem from="1549480963165" duration="47195000" />
       <workItem from="1549634671159" duration="7910000" />
-      <workItem from="1549642725750" duration="102033000" />
+      <workItem from="1549642725750" duration="102102000" />
     </task>
     <servers />
   </component>
@@ -486,7 +481,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166131000" />
+    <option name="totallyTimeSpent" value="166200000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -501,14 +496,14 @@
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17321527" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17321527" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="SQL Generator" order="0" weight="0.32925472" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32925472" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.32925472" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.86607635" visible="true" weight="0.39933258" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.86607635" weight="0.39933258" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32925472" />
@@ -516,7 +511,7 @@
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32925472" />
       <window_info anchor="bottom" id="Database Changes" order="11" weight="0.32925472" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.7880465" weight="0.36707452" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.7880465" visible="true" weight="0.36707452" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.21195352" side_tool="true" weight="0.21357064" />
       <window_info anchor="bottom" id="Python Console" order="14" weight="0.32925472" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -926,8 +921,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="401">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
