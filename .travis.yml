@@ -4,7 +4,8 @@ language: python
 # Mention the python version in which travis will run the app
 python:
   - "3.5"
-  - "3.6"
+  - "3.6-dev"  # 3.6 development branch
+  - "3.7-dev"  # 3.7 development branch
 
 
 # command to install dependencies in the requirements file
@@ -21,7 +22,7 @@ install:
 script: true
   - nosetests --with-coverage --coverage report
 
- # Another command/method to run tests
+# Another command/method to run tests
 script:
   - flake8
   - lint
@@ -36,7 +37,7 @@ after_script:
 
 # Using codecov to get coverage
 after_success:
-- codecov
+  - codecov
 
 services:
   - mysql
