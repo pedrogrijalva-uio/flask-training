@@ -1,5 +1,3 @@
-from typing import List
-
 from flask import render_template, redirect, url_for, request, flash
 from flask_login import login_required, current_user
 
@@ -11,13 +9,20 @@ from .forms import EmployeeProfileForm
 from ..models import User, Employee, Department
 from ..services.rest import rest_services
 
+
 @profile.route('/user-data', methods=['GET', 'POST'])
 @login_required
 def user_data():
     user = User.query.get(current_user.id)
     employee = Employee.query.filter(Employee.user_id == user.id).first()
     department = Department.query.filter(Department.id == employee.department_id).first()
-    return render_template('profile/employee_data.html', user=user, employee=employee, department=department)
+    username = rest_services.get_github_username(user.email)
+    github_username = username[0]
+    github_repositories = rest_services.get_repos_by_user(username[1])
+    litecoin_trx = rest_services.get_litecoin_last_transactions()
+    return render_template('profile/employee_data.html', user=user, employee=employee, department=department,
+                           github_username=github_username, github_repositories=github_repositories,
+                           litecoin_trx=litecoin_trx)
 
 
 @profile.route('/user-data/update', methods=['GET', 'POST'])
@@ -25,17 +30,12 @@ def user_data():
 def update_user_data():
     try:
         user: User = current_user
-        print('<<<<<<<<<<<<<<<<<<<')
-        print('update_user_data')
-        print(user.email)
-        github_username = rest_services.get_github_username(user.email)
-        print(github_username[0])
-        repos_github = rest_services.get_repos_by_user(github_username[1])
-        print(repos_github)
-        print('<<<<<<<<<<<<<<<<<<<')
         form = EmployeeProfileForm()
         title = 'Update profile'
         employee: Employee = Employee.query.filter(Employee.user_id == user.id).first()
+        del form.litecoin_trx
+        del form.github_repositories
+        del form.github_username
         if form.validate_on_submit():
             try:
                 user.name = validate_name(form.name.data, user.name, type='name')
@@ -44,7 +44,6 @@ def update_user_data():
                                                                             user.identification_number,
                                                                             type='identification')
                 employee.charge = validate_name(form.charge.data, employee.charge, type='charge')
-                print(form.department.data)
                 employee.department_id = 1
                 employee.department_id = validate_value_changed(form.department.data, employee.department_id,
                                                                 type='department')
@@ -52,14 +51,17 @@ def update_user_data():
                 flash(str(exsh))
             except ValueContainsSpecialCharacters as exch:
                 flash(str(exch))
+            except Exception as ex:
+                flash(str(ex))
             else:
                 user.update(name=user.name, email=user.email, passwd=user.passwd,
                             identification_number=user.identification_number)
                 employee.update(user_id=user.id, charge=employee.charge, department_id=employee.department_id)
                 return redirect(url_for(request.args.get('next', 'profile.user_data')))
-            finally:
-                return render_template('profile/update_employee_data.html', form=form, title=title)
+            # finally:
+            #     return render_template('profile/update_employee_data.html', form=form, title=title)
         else:
+
             form.name.data = user.name
             form.identification_number.data = user.identification_number
             form.email.data = user.email

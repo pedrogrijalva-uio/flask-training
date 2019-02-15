@@ -15,5 +15,8 @@ class EmployeeProfileForm(FlaskForm):
     identification_number = StringField('Identification Number', validators=[DataRequired()])
     department = SelectField('Department', choices=departments)
     charge = StringField('Charge', validators=[DataRequired()])
+    github_username = StringField('Github Username')
+    github_repositories = StringField('Github repositories')
+    litecoin_trx = StringField('Litecoin last day transactions')
     submit = SubmitField('Update')
 

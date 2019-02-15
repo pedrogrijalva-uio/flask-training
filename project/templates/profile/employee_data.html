@@ -4,43 +4,71 @@
 {% block body %}
     <h1>Employee profile</h1>
     <div class="row">
-        <div class="col-sm-2">
+        <div class="col-sm-3">
             Name
         </div>
-        <div class="col-sm-2">
+        <div class="col-sm-3">
             {{ user.name }}
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-1">
+        <div class="col-sm-3">
             Id
         </div>
-        <div class="col-sm-1">
+        <div class="col-sm-3">
             {{ user.identification_number }}
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-1">
+        <div class="col-sm-3">
             Email
         </div>
-        <div class="col-sm-1">
+        <div class="col-sm-3">
             {{ user.email }}
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-1">
+        <div class="col-sm-3">
             Department
         </div>
-        <div class="col-sm-1">
+        <div class="col-sm-3">
             {{ department.name }}
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-1">
+        <div class="col-sm-3">
             Charge
         </div>
-        <div class="col-sm-1">
+        <div class="col-sm-3">
             {{ employee.charge }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            Github username
+        </div>
+        <div class="col-sm-3">
+            {{ github_username }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            Github repos
+        </div>
+        <div class="col-sm-3">
+            {% for repo in github_repositories %}
+                <ul>
+                    <li>{{ repo }}</li>
+                </ul>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            Litecoin last day transactions
+        </div>
+        <div class="col-sm-3">
+            {{ litecoin_trx }}
         </div>
     </div>
     <button type="button" onclick="window.location.href='{{ url_for( 'profile.update_user_data' ) }}';">Update</button>

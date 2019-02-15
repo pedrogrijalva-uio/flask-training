@@ -22,7 +22,7 @@ script: true
 
  # Another command/method to run tests
 script:
-  - pytest
+  - pypytest
 
 # This returns the coverage and let's coveralls know the coverage percent.
 # Note that travis will build your system and get the coverage.
@@ -34,3 +34,6 @@ after_script:
 # Using codecov to get coverage
 after_success:
 - codecov
+
+services:
+  - mysql

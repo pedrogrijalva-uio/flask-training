@@ -5,9 +5,7 @@ from project.exceptions.custom_exceptions import ValueTooShort, ValueContainsSpe
 
 
 def values_comparison(func):
-    @wraps
     def wrapper(*args, **kwargs):
-        print('... inside values_comparison')
         name = args[1] if args[0] == args[1] else args[0]
         return func(name, **kwargs)
 
