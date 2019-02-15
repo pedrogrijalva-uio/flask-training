@@ -41,3 +41,18 @@ after_success:
 
 services:
   - mysql
+
+
+addons:
+  apt:
+    sources:
+      - mysql-5.7-trusty
+    packages:
+      - mysql-server
+
+dist: trusty
+
+sudo: required
+
+before_script:
+- mysql -e 'create database flaskdb;'
