@@ -1,12 +1,8 @@
 import os
-from unittest import TestCase
-from mock import patch, MagicMock, Mock
 
 import pytest
 
-from project import app
-from project.decorators.decorators import values_comparison
-from project.validators.validators import validate_value_registration, validate_name
+from project import app, db
 
 with open(os.path.join(os.path.dirname(__file__), 'data_test.sql'), 'rb') as f:
     _data_sql = f.read().decode('utf8')
@@ -14,12 +10,12 @@ with open(os.path.join(os.path.dirname(__file__), 'data_test.sql'), 'rb') as f:
 
 @pytest.fixture
 def client():
-    # app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:////tmp/test.db"
+    app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://travis@localhost:3306/flaskdb"
     app.config['WTF_CSRF_METHODS'] = []
     app.config['TESTING'] = True
     app.config['WTF_CSRF_ENABLED'] = False
     client = app.test_client()
-    # db.create_all()
+    db.create_all()
     # db.engine.execute(_data_sql)
     yield client
 
@@ -47,5 +43,3 @@ def test_login(client):
 def test_register(client):
     rv = register_user(client, 'Test test', 'test13@test.com', 'abc', 'abc', '0987654321', '', 'test charge')
     assert b'Test test' in rv.data
-
-
