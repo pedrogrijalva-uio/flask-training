@@ -1,8 +1,10 @@
 import os
+from unittest.mock import MagicMock
 
 import pytest
 
 from project import app, db
+from project.decorators.decorators import values_comparison
 
 with open(os.path.join(os.path.dirname(__file__), 'data_test.sql'), 'rb') as f:
     _data_sql = f.read().decode('utf8')
@@ -10,7 +12,7 @@ with open(os.path.join(os.path.dirname(__file__), 'data_test.sql'), 'rb') as f:
 
 @pytest.fixture
 def client():
-    app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://travis@localhost:3306/flaskdb"
+    # app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://travis@localhost:3306/flaskdb"
     app.config['WTF_CSRF_METHODS'] = []
     app.config['TESTING'] = True
     app.config['WTF_CSRF_ENABLED'] = False
@@ -43,3 +45,9 @@ def test_login(client):
 def test_register(client):
     rv = register_user(client, 'Test test', 'test13@test.com', 'abc', 'abc', '0987654321', '', 'test charge')
     assert b'Test test' in rv.data
+
+
+def test_validator_checkname():
+    mock = MagicMock('nombre', 'nuevonombre', type='name')
+    f = values_comparison(mock)
+    print(type(f))
